@@ -116,14 +116,14 @@ export default function Navbar() {
                       Login
                     </Link>
                   </li>
-                  <li onClick={handleNav} className="p-4">
+                  {/* <li onClick={handleNav} className="p-4">
                     <Link
                       href="/authentication/register"
                       className="hover:opacity-70 hover:text-[#FFD700]"
                     >
                       Register
                     </Link>
-                  </li>{" "}
+                  </li>{" "} */}
                 </ul>
               )}
 
