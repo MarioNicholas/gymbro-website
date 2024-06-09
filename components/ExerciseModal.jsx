@@ -36,6 +36,8 @@ export function ExerciseModal({ user, activity }) {
 
   const latestExercise = getLatestExerciseData(activity, user.username);
 
+  // console.log("user " + user);
+  // console.log("activity  " + activity);
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -93,7 +95,7 @@ export function ExerciseModal({ user, activity }) {
             </div>
           </div>
         ) : (
-          <div className="py-4">No exercise data found for {username}.</div>
+          <div className="py-4">No exercise data found for {user.username}.</div>
         )}
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
