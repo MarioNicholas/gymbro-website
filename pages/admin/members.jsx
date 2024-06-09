@@ -48,8 +48,8 @@ const AdminMembersPage = () => {
 
   return (
     <Fragment>
-      {userLoading || activityLoading && <PageLoader />}
-      {!userLoading && !activityLoading && (
+      {userLoading || activityLoading && !member && <PageLoader />}
+      {!userLoading && !activityLoading && member && (
         <Fragment>
           <AdminNavbar />
           <h1 className="text-6xl font-bold text-center my-[10px]">Members</h1>
